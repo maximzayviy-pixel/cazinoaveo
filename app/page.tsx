@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Casino, Users, Trophy, Coins } from 'lucide-react'
+import { Dice6, Users, Trophy, Coins } from 'lucide-react'
 import LoginForm from '@/components/LoginForm'
 import CasinoLobby from '@/components/CasinoLobby'
 import { AuthProvider, useAuth } from '@/hooks/useAuth'
@@ -62,7 +62,7 @@ function CasinoApp() {
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
                 className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-casino-gold to-yellow-400 rounded-full mb-4"
               >
-                <Casino className="w-10 h-10 text-black" />
+                <Dice6 className="w-10 h-10 text-black" />
               </motion.div>
               <h1 className="text-4xl font-bold text-white mb-2">
                 🎰 Local Casino
