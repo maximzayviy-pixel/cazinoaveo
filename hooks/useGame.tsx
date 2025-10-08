@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, createContext, useContext } from 'react'
+import React, { useState, useEffect, createContext, useContext } from 'react'
 import { useAuth } from './useAuth'
 
 interface Player {
@@ -28,7 +28,7 @@ interface GameContextType {
 
 const GameContext = createContext<GameContextType | null>(null)
 
-export function GameProvider({ children }: { children: React.ReactNode }): React.ReactElement {
+export function GameProvider({ children }: { children: React.ReactNode }) {
   const { user } = useAuth()
   const [gameState, setGameState] = useState<GameState>({
     players: [],
